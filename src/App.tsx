@@ -1,9 +1,10 @@
-import './App.css'
+import './App.css';
+import IndexPage from "./pages/IndexPage.tsx";
 
 function App() {
   return (
     <>
-        <p>aaa</p>
+        <IndexPage />
     </>
   )
 }
