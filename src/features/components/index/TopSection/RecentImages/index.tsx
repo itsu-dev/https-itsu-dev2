@@ -4,7 +4,7 @@ export default function RecentImages() {
     return (
         <section className={styles.wrapper}>
             <div className={styles.background}>
-                <img src="/test.webp" alt="写真"/>
+                <img className={styles.background} src="/test.webp" alt="写真"/>
             </div>
             <div className={styles.overlay}>
                 <h2 className={styles.title}>最近の写真</h2>
