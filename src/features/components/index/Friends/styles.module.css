@@ -10,6 +10,19 @@
   text-align: right;
 }
 
+.banners {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+
+  img {
+      width: 20rem;
+  }
+}
+
 @media (max-width: 768px) {
   .friends {
     gap: 1.5rem;
@@ -17,5 +30,10 @@
 
   .description {
     text-align: center;
+  }
+
+  .banners {
+    gap: 1rem;
+    margin-bottom: 2rem;
   }
 }

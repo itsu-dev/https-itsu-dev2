@@ -8,7 +8,7 @@ type Props = {
 export default function Friend({ friend }: Props) {
   return (
     <article className={styles.friend}>
-      <a href={friend.url}>
+      <a href={friend.url} target={"_blank"}>
         <img src={friend.icon} alt={friend.name} />
       </a>
       <p>{friend.name}</p>
