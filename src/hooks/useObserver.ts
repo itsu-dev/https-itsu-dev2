@@ -1,4 +1,4 @@
-import {RefObject, useEffect, useRef} from "react";
+import { RefObject, useEffect, useRef } from 'react';
 
 export default function useObserver(
   callback: IntersectionObserverCallback,
@@ -9,7 +9,7 @@ export default function useObserver(
 
   useEffect(() => {
     observer.current = new IntersectionObserver((entry, observer) => {
-      const e = entry.find(e => e.target === target.current);
+      const e = entry.find((e) => e.target === target.current);
       if (e && e.isIntersecting) {
         callback(entry, observer);
         observer.disconnect();

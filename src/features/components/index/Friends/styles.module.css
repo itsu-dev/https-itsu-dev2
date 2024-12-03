@@ -1,21 +1,21 @@
 .friends {
-    display: flex;
-    gap: 3rem;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .description {
-    text-align: right;
+  text-align: right;
 }
 
 @media (max-width: 768px) {
-    .friends {
-        gap: 1.5rem;
-    }
+  .friends {
+    gap: 1.5rem;
+  }
 
-    .description {
-        text-align: center;
-    }
+  .description {
+    text-align: center;
+  }
 }

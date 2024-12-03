@@ -1,43 +1,45 @@
 .title {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2.5rem;
-    writing-mode: vertical-lr;
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  writing-mode: vertical-lr;
 
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    margin: 0;
-    padding: 2rem 0.6rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  margin: 0;
+  padding: 2rem 0.6rem;
 
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
 
-    span {
-        opacity: var(--title-active, 0);
-        transform: translateY(calc(var(--title-active, -1) * 1rem - 1rem));
+  span {
+    opacity: var(--title-active, 0);
+    transform: translateY(calc(var(--title-active, -1) * 1rem - 1rem));
 
-        display: inline-block;
-        transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-    }
+    display: inline-block;
+    transition:
+      transform 0.5s cubic-bezier(0.77, 0, 0.175, 1),
+      opacity 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  }
 }
 
 .active {
-    --title-active: 1;
+  --title-active: 1;
 }
 
 @media (max-width: 1180px) {
-    .title {
-        width: 100%;
-        height: auto;
-        writing-mode: horizontal-tb;
-        border-left: none;
-        border-bottom: 1px solid black;
-        padding: 0.6rem 1rem;
+  .title {
+    width: 100%;
+    height: auto;
+    writing-mode: horizontal-tb;
+    border-left: none;
+    border-bottom: 1px solid black;
+    padding: 0.6rem 1rem;
 
-        font-size: 1.8rem;
-    }
+    font-size: 1.8rem;
+  }
 }

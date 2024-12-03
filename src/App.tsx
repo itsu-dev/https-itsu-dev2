@@ -1,12 +1,12 @@
 import './App.css';
-import IndexPage from "./pages/IndexPage.tsx";
+import IndexPage from './pages/IndexPage.tsx';
 
 function App() {
   return (
     <>
-        <IndexPage />
+      <IndexPage />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

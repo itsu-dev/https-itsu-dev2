@@ -5,7 +5,7 @@
 - [JVM on TypeScript](https://boke.itsu.dev/ChuruVM/index.html)
 - [第49回 筑波大学学園祭 雙峰祭 公式Web（学内マップ）](https://sohosai.com/map)
 - [第48回 筑波大学学園祭 雙峰祭 公式Web（学内マップ）](https://qiita.com/chururi/items/93ab81aad98fd8456e15)
-    - 関連記事：[筑波大学学園祭 Web サイト構築の舞台裏](https://zenn.dev/inaniwaudon/articles/e4d6d326c4c18b)
+  - 関連記事：[筑波大学学園祭 Web サイト構築の舞台裏](https://zenn.dev/inaniwaudon/articles/e4d6d326c4c18b)
 - [modern-manaba](https://chrome.google.com/webstore/detail/modern-manaba/oimcohooopcpjnmdgijjicdhkifopbli?hl=ja)
 - [筑波大学 総合学域群 移行要件チェックツール](https://boke.itsu.dev/scs-migration-checker/)
 - MiRm (The online server rental service for Minecraft)
