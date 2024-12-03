@@ -92,6 +92,7 @@
     .cc {
         font-size: 0.8rem;
         color: lightgray;
+        text-align: right;
     }
 }
 
