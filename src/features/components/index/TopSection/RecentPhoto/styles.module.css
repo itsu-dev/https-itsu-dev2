@@ -1,157 +1,157 @@
 .wrapper {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  background-color: black;
+
+  position: relative;
+
+  img {
+    position: absolute;
+    z-index: 5;
     width: 100%;
     height: 100%;
-    max-height: 100vh;
-    background-color: black;
+    object-fit: contain;
+  }
 
-    position: relative;
+  .nophoto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    img {
-        position: absolute;
-        z-index: 5;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+    p {
+      color: white;
     }
-
-    .nophoto {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        p {
-            color: white;
-        }
-    }
+  }
 }
 
 .overlay {
-    z-index: 10;
+  z-index: 10;
 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0) 80%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+
+  .header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     padding: 1rem 2rem;
 
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.8) 0%,
-            rgba(255, 255, 255, 0) 20%,
-            rgba(255, 255, 255, 0) 80%,
-            rgba(0, 0, 0, 0.8) 100%
-    );
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
 
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 1rem;
-
-    .header {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 1rem 2rem;
-
-        font-family: 'Montserrat', sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        color: white;
-
-        .place {
-            font-size: 1.2rem;
-            margin-bottom: 0.2rem;
-        }
-
-        .date {
-            margin: 0;
-            font-size: 1rem;
-        }
+    .place {
+      font-size: 1.2rem;
+      margin-bottom: 0.2rem;
     }
 
-    .title {
-        font-family: 'Montserrat', sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-
-        color: white;
-        font-size: 2rem;
-        padding: 1rem 0 0;
-        margin: 0;
-        border-top: 1px solid white;
-        white-space: nowrap;
+    .date {
+      margin: 0;
+      font-size: 1rem;
     }
+  }
 
-    .cc {
-        font-size: 0.8rem;
-        color: lightgray;
-        text-align: right;
-    }
+  .title {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 0 0;
+    margin: 0;
+    border-top: 1px solid white;
+    white-space: nowrap;
+  }
+
+  .cc {
+    font-size: 0.8rem;
+    color: lightgray;
+    text-align: right;
+  }
 }
 
 .background {
-    z-index: 0;
+  z-index: 0;
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    img {
-        width: calc(100% + 60px);
-        height: calc(100% + 60px);
-        margin: -30px;
-        object-fit: cover;
-        filter: blur(30px) brightness(0.9);
-    }
+  img {
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
+    margin: -30px;
+    object-fit: cover;
+    filter: blur(30px) brightness(0.9);
+  }
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .descwrapper {
-    width: 100%;
-    height: 2rem;
-    padding: 0 1rem 0.77rem 0;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  height: 2rem;
+  padding: 0 1rem 0.77rem 0;
+  overflow: hidden;
+  position: relative;
 
-    span {
-        position: absolute;
-        top: -0.26rem;
-        left: 0;
-        color: white;
-        white-space: nowrap;
-        animation: scroll 10s linear infinite running;
-    }
+  span {
+    position: absolute;
+    top: -0.26rem;
+    left: 0;
+    color: white;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite running;
+  }
 }
 
 @media (max-width: 1180px) {
-    .wrapper {
-        min-height: 100vh;
-    }
+  .wrapper {
+    min-height: 100vh;
+  }
 }
 
 @media (max-width: 768px) {
-    .overlay {
-        .title {
-            font-size: 1.5rem;
-        }
+  .overlay {
+    .title {
+      font-size: 1.5rem;
     }
+  }
 }
