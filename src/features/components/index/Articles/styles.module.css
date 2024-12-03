@@ -1,0 +1,22 @@
+.articles {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.more {
+    text-align: right;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .articles {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .more {
+        text-align: center;
+    }
+}

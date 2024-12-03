@@ -6,6 +6,7 @@ import React from "react";
 import SNSIcon from "./SNSIcon";
 import {BsGithub, BsTwitterX} from "react-icons/bs";
 import {SiQiita, SiZenn} from "react-icons/si";
+import VerticalTitle from "../../../../components/VerticalTitle";
 
 export default function TopSection() {
     const ref = React.useRef<HTMLTableSectionElement>(null);
@@ -13,7 +14,7 @@ export default function TopSection() {
         <FullPageSection as="div" className={styles.wrapper}>
             <RecentImages />
             <section ref={ref} className={styles.introduction}>
-                <h2 className={styles.title}>Introduction</h2>
+                <VerticalTitle text={"Introduction"} />
                 <Introduction/>
 
                 <menu className={styles.sns}>

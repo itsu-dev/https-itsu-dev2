@@ -1,0 +1,25 @@
+.wrapper {
+    padding-bottom: 0;
+}
+
+.wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(5.011rem - 1px);
+    height: calc(100% - 1px);
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+}
+
+@media (max-width: 1180px) {
+    .wrapper::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+    }
+}

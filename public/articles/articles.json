@@ -1,0 +1,14 @@
+{
+  "articles": [
+    {
+      "title": "wasm-opt で [parse exception: expected more elements in list] エラーが発生した",
+      "url": "https://zenn.dev/itsu_dev/articles/3ff4b61fac7959",
+      "date": "2024/08/12"
+    },
+    {
+      "title": "HTML / JS 入門から Next.js での開発を 2 日間で行う研修をして得られた知見など",
+      "url": "https://zenn.dev/itsu_dev/articles/e0e842454bf8cb",
+      "date": "2024/02/04"
+    }
+  ]
+}
