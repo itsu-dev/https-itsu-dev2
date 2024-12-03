@@ -7,8 +7,8 @@ export default function RecentImages() {
                 <img className={styles.background} src="/test.webp" alt="写真"/>
             </div>
             <div className={styles.overlay}>
-                <h2 className={styles.title}>最近の写真</h2>
-                <p className={styles.cc}>クリエイティブ・コモンズ 表示（CC BY 4.0）</p>
+                <h2 className={styles.title}>Recent Photo</h2>
+                <p className={styles.cc}>Licensed under CC BY 4.0</p>
             </div>
             <img src="/test.webp" alt="写真"/>
         </section>
