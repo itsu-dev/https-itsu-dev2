@@ -19,13 +19,18 @@ export default function RecentImages() {
             <img className={styles.background} src={photo.image} alt="写真" />
           </div>
           <div className={styles.overlay}>
-            <h2 className={styles.title}>Recent Photo</h2>
-            <p className={styles.cc}>
-              Licensed under{' '}
-              <a href={'https://creativecommons.org/licenses/by/4.0/deed.ja'}>
-                CC BY 4.0
-              </a>
-            </p>
+            <div className={styles.descwrapper}>
+              <span>{photo.description}</span>
+            </div>
+            <div>
+              <h2 className={styles.title}>Recent Photo</h2>
+              <p className={styles.cc}>
+                Licensed under{' '}
+                <a href={'https://creativecommons.org/licenses/by/4.0/deed.ja'}>
+                  CC BY 4.0
+                </a>
+              </p>
+            </div>
             <div className={styles.header}>
               <p className={styles.place}>📍{photo.place}</p>
               <p className={styles.date}>📆 {photo.date}</p>
