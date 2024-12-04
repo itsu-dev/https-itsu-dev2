@@ -5,12 +5,14 @@ import WorksAndAnnouncements from '../features/components/index/WorksAndAnnounce
 import SkillsAndPastAffiliations from '../features/components/index/SkillsAndPastAffiliations';
 import Friends from '../features/components/index/Friends';
 import Footer from '../features/components/index/Footer';
+import Haiku from '../features/components/index/Haiku';
 
 export default function IndexPage() {
   return (
     <>
       <Landing />
       <TopSection />
+      <Haiku />
       <Articles />
       <WorksAndAnnouncements />
       <SkillsAndPastAffiliations />
