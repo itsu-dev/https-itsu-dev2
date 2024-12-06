@@ -16,7 +16,7 @@ export default function RecentImages() {
       {photo && (
         <>
           <div className={styles.background}>
-            <img className={styles.background} src={photo.image} alt="写真" />
+            <img className={styles.background} src={photo.image_url} alt="写真" />
           </div>
           <div className={styles.overlay}>
             <div className={styles.descwrapper}>
@@ -33,10 +33,12 @@ export default function RecentImages() {
             </div>
             <div className={styles.header}>
               <p className={styles.place}>📍{photo.place}</p>
-              <p className={styles.date}>📆 {photo.date}</p>
+              <p className={styles.date}>📆 {new Date(photo.created_at).toLocaleString('ja-JP', {
+                timeZone: 'Asia/Tokyo',
+              })}</p>
             </div>
           </div>
-          <img src={photo.image} alt="写真" />
+          <img src={photo.image_url} alt="写真" />
         </>
       )}
       <div className={styles.nophoto}>{!photo && <p>No photo.</p>}</div>

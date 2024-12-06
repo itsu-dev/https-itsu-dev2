@@ -12,8 +12,8 @@ export type Article = {
 };
 
 export type RecentPhoto = {
-  image: string;
+  image_url: string;
   description: string;
   place: string;
-  date: string;
+  created_at: string;
 };
