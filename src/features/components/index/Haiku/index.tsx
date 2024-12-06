@@ -9,9 +9,9 @@ export default function Haiku() {
   const [haiku, setHaiku] = useState<string>('');
 
   useEffect(() => {
-    fetch('/articles/haiku.txt')
-      .then((response) => response.text())
-      .then((data) => setHaiku(data));
+    fetch('https://https-itsu-dev2-workers.itsu020402.workers.dev/api/haiku/latest')
+      .then((response) => response.json())
+      .then((data) => setHaiku(data["haiku"]));
   }, []);
 
   useObserver(() => {

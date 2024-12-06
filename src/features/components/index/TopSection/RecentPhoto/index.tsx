@@ -6,9 +6,9 @@ export default function RecentImages() {
   const [photo, setPhoto] = useState<RecentPhotoType | null>(null);
 
   useEffect(() => {
-    fetch('/articles/recent_photo.json')
+    fetch('https://https-itsu-dev2-workers.itsu020402.workers.dev/api/recent_photo/latests')
       .then((response) => response.json())
-      .then((data) => setPhoto(data));
+      .then((data) => setPhoto(data[0]));
   }, []);
 
   return (
