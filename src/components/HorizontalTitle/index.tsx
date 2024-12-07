@@ -15,7 +15,7 @@ export default function HorizontalTitle({ text, isLeft }: Props) {
       ref.current?.classList.add(styles.active);
     },
     ref,
-    { threshold: 1.0 },
+    { threshold: 0.9 },
   );
 
   return (
