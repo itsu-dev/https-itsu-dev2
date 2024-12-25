@@ -1,6 +1,11 @@
 {
   "articles": [
     {
+      "title": "30 億のデバイスで走る絵文字プログラミング言語 emojin",
+      "url": "https://qiita.com/chururi/items/151a296edf9765ac6c17",
+      "date": "2024/12/21"
+    },
+    {
       "title": "wasm-opt で [parse exception: expected more elements in list] エラーが発生した",
       "url": "https://zenn.dev/itsu_dev/articles/3ff4b61fac7959",
       "date": "2024/08/12"
