@@ -27,7 +27,7 @@ export default function TopSection() {
           />
           <SNSIcon
             id="@chururi_"
-            link="https://x.com/chururi"
+            link="https://x.com/chururi_"
             icon={<BsTwitterX color={'black'} />}
             backgroundColor="#f1f2f2"
             color="#333333"
